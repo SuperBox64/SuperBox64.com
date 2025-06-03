@@ -35,6 +35,11 @@
     // Smooth scrolling for navigation links
     document.querySelectorAll('.nav-links a').forEach(link => {
         link.addEventListener('click', function(e) {
+            // Skip if the link is external (doesn't start with #)
+            if (!this.getAttribute('href').startsWith('#')) {
+                return;
+            }
+            
             e.preventDefault();
             
             // Close the mobile menu if it's open
