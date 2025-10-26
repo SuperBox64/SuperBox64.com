@@ -33,6 +33,14 @@
             price: 499.99,
             image: './images/superbox64_whitetrak.jpeg',
             paypalLink: 'https://www.paypal.com/ncp/payment/MJA2JFTKJZBNJ'
+        },
+        {
+            id: 'GRS-PPSP-005',
+            name: 'GRS Push Pull Spinner',
+            description: 'GRS Push Pull Arcade Spinner',
+            price: 50.00,
+            image: './images/grs_push_pull_spinner.jpeg',
+            paypalLink: 'https://www.paypal.com/ncp/payment/Z3AM4TWMVZB3J'
         }
     ];
 
