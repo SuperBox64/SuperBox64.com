@@ -45,7 +45,7 @@
         {
             id: 'SB64-TKBL-006',
             name: 'SuperBox64 Trackball Standalone',
-            description: 'Black Red Blue, Light up LED Blue Trak. USB out port on back, LED Light up trackball, 7 foot USB cable, 4 Super rubber feet. Max 2 items',
+            description: 'Black Red Blue, Light up LED Blue Trackball ball. USB out port on back, LED Light up trackball, 7 foot USB cable, 4 Super rubber feet. Max 2 items',
             price: 159.99,
             image: './images/superbox64_trackball.jpeg',
             paypalLink: 'https://www.paypal.com/ncp/payment/WXE8WKD4PTQ72'
