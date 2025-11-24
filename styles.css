@@ -97,7 +97,8 @@ body {
 
 /* Hero Section */
 .hero {
-    height: 64vh;
+    height: 540px;
+    min-height: 540px;
     position: relative;
     background-image: url('./images/hero_image_50.JPG');
     background-size: cover;
