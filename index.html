@@ -41,10 +41,15 @@
     <section id="home" class="hero">
         <div class="hero-content">
             <h1 id="hero-domain"></h1>
-            <p class="hero-subtitle">Retro Arcade Gaming Center</p>
-            <p class="hero-handcrafted">Hand Crafted items Created by</p>
-            <p class="hero-description">Video Game, Console and USB Game Controller, Designer Todd Bruss</p>
-            <p class="hero-tagline">Official Items and the Best Upgrades at the Lowest Prices</p>
+            <p class="hero-subtitle desktop-only">Retro Arcade Gaming Center</p>
+            <p class="hero-handcrafted desktop-only">Hand Crafted items Created by</p>
+            <p class="hero-description desktop-only">Video Game, Console and USB Game Controller, Designer Todd Bruss</p>
+            <p class="hero-tagline desktop-only">Official Items and the Best Upgrades at the Lowest Prices</p>
+
+            <p class="hero-subtitle mobile-only">Retro Arcadia</p>
+            <p class="hero-description mobile-only">Console Designer Todd Bruss</p>
+            <p class="hero-tagline mobile-only">Official Items, Lowest Prices</p>
+
             <a href="#products" class="cta-button">Explore All Models</a>
         </div>
         <div class="hero-overlay"></div>
@@ -140,7 +145,7 @@
 
             const heroDomain = document.getElementById('hero-domain');
             if (heroDomain) {
-                heroDomain.innerHTML = displayName + '<br>Official ' + country + ' Super Store';
+                heroDomain.innerHTML = displayName + '<br><span class="desktop-only">Official ' + country + ' Super Store</span><span class="mobile-only">' + country + ' Super Store</span>';
             }
 
             const footerCopyright = document.getElementById('footer-copyright');

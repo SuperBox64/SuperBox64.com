@@ -304,8 +304,25 @@ body {
     box-shadow: 0 5px 15px rgba(0,123,255,0.4);
 }
 
+/* Mobile/Desktop visibility */
+.mobile-only {
+    display: none;
+}
+
+.desktop-only {
+    display: block;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
+    .mobile-only {
+        display: block;
+    }
+
+    .desktop-only {
+        display: none;
+    }
+
     .burger-menu {
         display: block;
     }
