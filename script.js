@@ -7,14 +7,20 @@ document.addEventListener('DOMContentLoaded', function() {
     // Set hero domain dynamically
     const heroDomain = document.getElementById('hero-domain');
     if (heroDomain) {
-        const country = window.location.hostname.endsWith('.uk') ? 'UK' : 'USA';
-        heroDomain.innerHTML = window.location.hostname + '<br>Official ' + country + ' Super Store';
+        // Try multiple methods to get the domain
+        const hostname = window.location.hostname || window.location.host || document.domain;
+        console.log('Detected hostname:', hostname);
+        console.log('Full location:', window.location);
+
+        const country = hostname.endsWith('.uk') ? 'UK' : 'USA';
+        heroDomain.innerHTML = hostname + '<br>Official ' + country + ' Super Store';
     }
 
     // Set footer copyright dynamically
     const footerCopyright = document.getElementById('footer-copyright');
     if (footerCopyright) {
-        footerCopyright.textContent = '© 2026 ' + window.location.hostname + ' All rights reserved.';
+        const hostname = window.location.hostname || window.location.host || document.domain;
+        footerCopyright.textContent = '© 2026 ' + hostname + ' All rights reserved.';
     }
     
     // Burger menu code

@@ -119,7 +119,11 @@
         const produxScript = document.createElement('script');
         produxScript.src = 'produx.js?t=' + new Date().getTime();
         document.head.appendChild(produxScript);
+
+        // Cache buster for script.js
+        const mainScript = document.createElement('script');
+        mainScript.src = 'script.js?t=' + new Date().getTime();
+        document.head.appendChild(mainScript);
     </script>
-    <script src="script.js"></script>
 </body>
 </html> 
