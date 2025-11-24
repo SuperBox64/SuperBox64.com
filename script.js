@@ -1,54 +1,45 @@
+console.log('Script.js loaded!');
+
 document.addEventListener('DOMContentLoaded', function() {
+    console.log('DOMContentLoaded fired!');
+
     // Ensure URL shows #home on page load
     if (!window.location.hash) {
         window.location.hash = 'home';
     }
 
-    // Set hero domain dynamically
-    const heroDomain = document.getElementById('hero-domain');
-    if (heroDomain) {
-        // Try multiple methods to get the domain
-        const hostname = window.location.hostname || window.location.host || document.domain;
-        console.log('Detected hostname:', hostname);
-        console.log('Full location:', window.location);
-
-        const country = hostname.endsWith('.uk') ? 'UK' : 'USA';
-        heroDomain.innerHTML = hostname + '<br>Official ' + country + ' Super Store';
-    }
-
-    // Set footer copyright dynamically
-    const footerCopyright = document.getElementById('footer-copyright');
-    if (footerCopyright) {
-        const hostname = window.location.hostname || window.location.host || document.domain;
-        footerCopyright.textContent = '© 2026 ' + hostname + ' All rights reserved.';
-    }
-    
     // Burger menu code
     const burgerMenu = document.querySelector('.burger-menu');
     const navLinks = document.querySelector('.nav-links');
 
-    burgerMenu.addEventListener('click', function() {
-        this.classList.toggle('active');
-        navLinks.classList.toggle('active');
-    });
+    console.log('Burger menu element:', burgerMenu);
+    console.log('Nav links element:', navLinks);
 
-    // Close menu when clicking outside
-    document.addEventListener('click', function(e) {
-        if (!navLinks.contains(e.target) && !burgerMenu.contains(e.target)) {
-            navLinks.classList.remove('active');
-            const burgerIcon = burgerMenu.querySelector('i');
-            burgerIcon.classList.replace('fa-times', 'fa-bars');
-        }
-    });
-
-    // Close menu when clicking a nav link
-    navLinks.querySelectorAll('a').forEach(link => {
-        link.addEventListener('click', function() {
-            navLinks.classList.remove('active');
-            const burgerIcon = burgerMenu.querySelector('i');
-            burgerIcon.classList.replace('fa-times', 'fa-bars');
+    if (burgerMenu && navLinks) {
+        burgerMenu.addEventListener('click', function() {
+            console.log('Burger menu clicked');
+            this.classList.toggle('active');
+            navLinks.classList.toggle('active');
         });
-    });
+
+        // Close menu when clicking outside
+        document.addEventListener('click', function(e) {
+            if (!navLinks.contains(e.target) && !burgerMenu.contains(e.target)) {
+                navLinks.classList.remove('active');
+                burgerMenu.classList.remove('active');
+            }
+        });
+
+        // Close menu when clicking a nav link
+        navLinks.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', function() {
+                navLinks.classList.remove('active');
+                burgerMenu.classList.remove('active');
+            });
+        });
+    } else {
+        console.error('Burger menu or nav links not found');
+    }
 
 
     // Smooth scrolling for navigation links
