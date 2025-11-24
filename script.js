@@ -3,6 +3,19 @@
     if (!window.location.hash) {
         window.location.hash = 'home';
     }
+
+    // Set hero domain dynamically
+    const heroDomain = document.getElementById('hero-domain');
+    if (heroDomain) {
+        const country = window.location.hostname.endsWith('.uk') ? 'UK' : 'USA';
+        heroDomain.innerHTML = window.location.hostname + '<br>Official ' + country + ' Super Store';
+    }
+
+    // Set footer copyright dynamically
+    const footerCopyright = document.getElementById('footer-copyright');
+    if (footerCopyright) {
+        footerCopyright.textContent = '© 2026 ' + window.location.hostname + ' All rights reserved.';
+    }
     
     // Burger menu code
     const burgerMenu = document.querySelector('.burger-menu');
