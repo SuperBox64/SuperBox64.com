@@ -40,7 +40,7 @@
 
     <section id="home" class="hero">
         <div class="hero-content">
-            <h1 id="hero-domain"><br>Official USA Super Store</h1>
+            <h1 id="hero-domain"></h1>
             <p class="hero-subtitle">Retro Arcade Gaming Center</p>
             <p class="hero-handcrafted">Hand Crafted items Created by</p>
             <p class="hero-description">Video Game, Console and USB Game Controller, Designer Todd Bruss</p>
@@ -115,15 +115,31 @@
     </footer>
 
     <script>
+        // Set domain immediately
+        window.addEventListener('DOMContentLoaded', function() {
+            const hostname = window.location.hostname || window.location.host || document.domain;
+            const country = hostname.endsWith('.uk') ? 'UK' : 'USA';
+
+            const heroDomain = document.getElementById('hero-domain');
+            if (heroDomain) {
+                heroDomain.innerHTML = hostname + '<br>Official ' + country + ' Super Store';
+            }
+
+            const footerCopyright = document.getElementById('footer-copyright');
+            if (footerCopyright) {
+                footerCopyright.textContent = '© 2026 ' + hostname + ' All rights reserved.';
+            }
+        });
+
         // Cache buster for produx.js
         const produxScript = document.createElement('script');
         produxScript.src = 'produx.js?t=' + new Date().getTime();
-        document.head.appendChild(produxScript);
+        document.body.appendChild(produxScript);
 
         // Cache buster for script.js
         const mainScript = document.createElement('script');
         mainScript.src = 'script.js?t=' + new Date().getTime();
-        document.head.appendChild(mainScript);
+        document.body.appendChild(mainScript);
     </script>
 </body>
 </html> 
