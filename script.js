@@ -1,4 +1,4 @@
-//document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function() {
     // Ensure URL shows #home on page load
     if (!window.location.hash) {
         window.location.hash = 'home';
@@ -178,4 +178,4 @@
         }, 5000);
     }
 
-//}); 
+});
