@@ -122,16 +122,30 @@
             // Remove "www." if present
             hostname = hostname.replace(/^www\./, '');
 
+            // Apply brand-specific capitalization
+            let displayName = hostname;
+            if (hostname.toLowerCase().includes('retrobox')) {
+                displayName = hostname.replace(/retrobox/gi, 'RetroBox');
+            } else if (hostname.toLowerCase().includes('superbox')) {
+                displayName = hostname.replace(/superbox/gi, 'SuperBox');
+            } else if (hostname.toLowerCase().includes('arcadebox')) {
+                displayName = hostname.replace(/arcadebox/gi, 'ArcadeBox');
+            } else if (hostname.toLowerCase().includes('bossvcs')) {
+                displayName = hostname.replace(/bossvcs/gi, 'BossVCS');
+            } else if (hostname.toLowerCase().includes('1upgames')) {
+                displayName = hostname.replace(/1upgames/gi, '1upGames');
+            }
+
             const country = hostname.endsWith('.uk') ? 'UK' : 'USA';
 
             const heroDomain = document.getElementById('hero-domain');
             if (heroDomain) {
-                heroDomain.innerHTML = hostname + '<br>Official ' + country + ' Super Store';
+                heroDomain.innerHTML = displayName + '<br>Official ' + country + ' Super Store';
             }
 
             const footerCopyright = document.getElementById('footer-copyright');
             if (footerCopyright) {
-                footerCopyright.textContent = '© 2026 ' + hostname + ' All rights reserved.';
+                footerCopyright.textContent = '© 2026 ' + displayName + ' All rights reserved.';
             }
         });
 
