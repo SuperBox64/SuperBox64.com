@@ -106,8 +106,8 @@ body {
     align-items: center;
     justify-content: center;
     text-align: center;
-    margin-top: -30px;
     margin-bottom: 0;
+    padding-top: 40px;
 
 }
 
@@ -137,15 +137,23 @@ body {
 
 .hero-subtitle {
     font-size: 1.5rem;
-    margin-bottom: 1rem;
+    margin-bottom: calc(1rem + 10px);
     color: var(--primary-blue);
     font-family: 'Press Start 2P', cursive;
+}
+
+.hero-handcrafted {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    margin-top: 1rem;
+    color: var(--text-white);
 }
 
 .hero-description {
     font-size: 1.2rem;
     margin-bottom: 0.5rem;
-    color: var(--text-gray);
+    margin-top: 0;
+    color: var(--text-white);
 }
 
 .hero-tagline {

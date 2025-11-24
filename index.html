@@ -10,8 +10,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <!-- EmailJS for form functionality -->
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-    <!-- Your CSS file -->
-    <link rel="stylesheet" href="styles.css">
+    <!-- Your CSS file with cache buster -->
+    <script>
+        document.write('<link rel="stylesheet" href="styles.css?t=' + new Date().getTime() + '">');
+    </script>
 </head>
 <body>
     <nav class="navbar">
@@ -38,11 +40,12 @@
 
     <section id="home" class="hero">
         <div class="hero-content">
-            <h1>SuperBox64.com<br>Official Store</h1>
+            <h1>SuperBox64.com<br>Official Super Store</h1>
             <p class="hero-subtitle">Retro Arcade Game Center</p>
-            <p class="hero-description">Video Game, Console and USB Controller Designer Todd Bruss</p>
-            <p class="hero-tagline">Official Items and Upgrades, Lowest Prices</p>
-            <a href="#products" class="cta-button">Explore Models</a>
+            <p class="hero-handcrafted">Hand Crafted items Created by</p>
+            <p class="hero-description">Video Game, Console and USB Game Controller, Designer Todd Bruss</p>
+            <p class="hero-tagline">Official Items and the Best Upgrades at the Lowest Prices</p>
+            <a href="#products" class="cta-button">Explore All Models</a>
         </div>
         <div class="hero-overlay"></div>
     </section>
