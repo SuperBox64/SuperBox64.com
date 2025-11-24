@@ -110,7 +110,12 @@
         </div>
     </footer>
 
-    <script src="produx.js"></script>
+    <script>
+        // Cache buster for produx.js
+        const produxScript = document.createElement('script');
+        produxScript.src = 'produx.js?t=' + new Date().getTime();
+        document.head.appendChild(produxScript);
+    </script>
     <script src="script.js"></script>
 </body>
 </html> 
