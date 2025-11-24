@@ -316,10 +316,12 @@ body {
 
     .burger-menu.active .bar:nth-child(1) {
         transform: translateY(8px) rotate(45deg);
+        margin: 0 auto;
     }
 
     .burger-menu.active .bar:nth-child(3) {
         transform: translateY(-8px) rotate(-45deg);
+        margin: 0 auto;
     }
 
     .nav-links {
