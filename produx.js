@@ -4,7 +4,7 @@
     const products = [
         {
             id: 'GRS-PPSP-005',
-            name: 'GRS Push Pull Spinner',
+            name: 'Push Pull Original Button Hole Spinner',
             description: 'GRS Push Pull Arcade Spinner',
             price: 99.99,
             image: './images/grs_push_pull_spinner.jpeg',
