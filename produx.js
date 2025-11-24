@@ -3,6 +3,14 @@
     // Products data
     const products = [
         {
+            id: 'SB64-USBC-009',
+            name: 'USB Retro Arcade Game Controller ACDC Back N Black',
+            description: 'ACDC Back N Black Lid with Gold Red Blue Body, all Black buttons, 2" White trackball, Silver spinner, Atari DB-9 port. 8ft detachable USB cable, heavy duty design. Patent pending by designer Todd Bruss. Compatible with Windows, Mac, Linux, Raspberry Pi, PS3.',
+            price: 299.99,
+            image: './images/superbox64acdcbackinblack-newsuperbox64bodystyle.JPG',
+            paypalLink: 'https://www.paypal.com/ncp/payment/XVRFHUZA4N7J8'
+        },
+        {
             id: 'SB64-USBC-008',
             name: 'USB Retro Arcade Game Controller Atari Fire',
             description: 'White, Yellow, Orange, Red concave buttons, Yellow trackball, Silver spinner, Red joystick, White select start buttons, White Left Middle Right click buttons, Atari DB-9 port on the front. USB port on the back, 8 foot Black USB cable that\'s detachable! 4 side buttons, Heavy Duty design.',
