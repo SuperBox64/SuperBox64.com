@@ -16,6 +16,30 @@
     </script>
 </head>
 <body>
+    <div class="promo-banner">
+        <div class="promo-banner-content">
+            <div class="promo-text" id="promo-text"></div>
+            <div class="promo-countdown-label">Time to save Christmas:</div>
+            <div class="promo-countdown">
+                <div class="promo-countdown-segment">
+                    <span class="promo-countdown-number" id="days">00</span>
+                    <span class="promo-countdown-label-small">DAYS</span>
+                </div>
+                <div class="promo-countdown-segment">
+                    <span class="promo-countdown-number" id="hours">00</span>
+                    <span class="promo-countdown-label-small">HRS</span>
+                </div>
+                <div class="promo-countdown-segment">
+                    <span class="promo-countdown-number" id="minutes">00</span>
+                    <span class="promo-countdown-label-small">MIN</span>
+                </div>
+                <div class="promo-countdown-segment">
+                    <span class="promo-countdown-number" id="seconds">00</span>
+                    <span class="promo-countdown-label-small">SEC</span>
+                </div>
+            </div>
+        </div>
+    </div>
     <nav class="navbar">
         <div class="logo">
             <a href="#home">
@@ -142,9 +166,15 @@
 
             const country = hostname.endsWith('.uk') ? 'UK' : 'USA';
 
+            // Set promo banner text
+            const promoText = document.getElementById('promo-text');
+            if (promoText) {
+                promoText.textContent = displayName.toUpperCase() + ' Black Friday Steal. All SuperBox Items are $100 Off!';
+            }
+
             const heroDomain = document.getElementById('hero-domain');
             if (heroDomain) {
-                heroDomain.innerHTML = displayName + '<br><span class="desktop-only">Official ' + country + ' Super Store</span><span class="mobile-only">' + country + ' Super Store</span>';
+                heroDomain.innerHTML = displayName.toUpperCase() + '<br><span class="desktop-only">Official ' + country + ' Super Store</span><span class="mobile-only">' + country + ' Super Store</span>';
             }
 
             const footerCopyright = document.getElementById('footer-copyright');
