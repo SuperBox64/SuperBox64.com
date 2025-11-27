@@ -1,5 +1,13 @@
 console.log('Script.js loaded!');
 
+// Scroll to top immediately on page load/reload
+window.scrollTo(0, 0);
+
+// Also set scroll position before page unload
+window.addEventListener('beforeunload', function() {
+    window.scrollTo(0, 0);
+});
+
 // Countdown Timer
 function updateCountdown() {
     const christmas = new Date('December 25, 2025 00:00:00').getTime();

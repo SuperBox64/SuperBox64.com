@@ -67,6 +67,10 @@
     <!-- Your CSS file with cache buster -->
     <script>
         document.write('<link rel="stylesheet" href="styles.css?t=' + new Date().getTime() + '">');
+        // Prevent browser from restoring scroll position
+        if ('scrollRestoration' in history) {
+            history.scrollRestoration = 'manual';
+        }
     </script>
 </head>
 <body>
