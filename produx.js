@@ -13,7 +13,7 @@
         },
         {
             id: 'SB64-USBC-008',
-            name: 'USB Retro Arcade Game Controller Atari Fire',
+            name: 'USB Retro Arcade Box Controller Atari Fire',
             description: 'White, Yellow, Orange, Red concave buttons, Yellow trackball, Silver spinner, Red joystick, White select start buttons, White Left Middle Right click buttons, Atari DB-9 port on the front. USB port on the back, 8 foot Black USB cable that\'s detachable! 4 side buttons, Heavy Duty design.',
             price: 299.99,
             image: './images/superbox64_atarifire.jpeg',
@@ -22,7 +22,7 @@
         },
         {
             id: 'SB64-USBC-007',
-            name: 'USB Retro Arcade Game Controller Atari Orange',
+            name: 'USB Super Arcade Game Controller Atari Orange',
             description: 'Orange buttons, Yellow trackball, Silver spinner, Orange joystick, White select start buttons, Atari DB-9 port on the front. USB port on the back, 8 foot Black USB cable that\'s detachable! 4 side buttons, Heavy Duty design. Case, layout, logo, colorway patent pending screw system by designer Todd Bruss.',
             price: 299.99,
             image: './images/superbox64atariorange.jpg',
