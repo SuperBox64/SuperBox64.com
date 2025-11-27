@@ -2,6 +2,24 @@ console.log('Script.js loaded!');
 
 // Scroll to top immediately on page load/reload
 window.scrollTo(0, 0);
+document.documentElement.scrollTop = 0;
+document.body.scrollTop = 0;
+
+// Force scroll on page load
+window.addEventListener('load', function() {
+    setTimeout(function() {
+        window.scrollTo(0, 0);
+        document.documentElement.scrollTop = 0;
+        document.body.scrollTop = 0;
+    }, 0);
+});
+
+// Force scroll on DOMContentLoaded
+window.addEventListener('DOMContentLoaded', function() {
+    window.scrollTo(0, 0);
+    document.documentElement.scrollTop = 0;
+    document.body.scrollTop = 0;
+});
 
 // Also set scroll position before page unload
 window.addEventListener('beforeunload', function() {
@@ -44,8 +62,29 @@ updateCountdown();
 function init() {
     console.log('init called!');
 
-    // Scroll to top of page on load
+    // Scroll to top of page on load - multiple approaches
     window.scrollTo(0, 0);
+    document.documentElement.scrollTop = 0;
+    document.body.scrollTop = 0;
+
+    // Force scroll again after a tiny delay to override any layout shifts
+    setTimeout(function() {
+        window.scrollTo(0, 0);
+        document.documentElement.scrollTop = 0;
+        document.body.scrollTop = 0;
+    }, 10);
+
+    setTimeout(function() {
+        window.scrollTo(0, 0);
+        document.documentElement.scrollTop = 0;
+        document.body.scrollTop = 0;
+    }, 50);
+
+    setTimeout(function() {
+        window.scrollTo(0, 0);
+        document.documentElement.scrollTop = 0;
+        document.body.scrollTop = 0;
+    }, 100);
 
     // Ensure URL shows #home on page load
     if (!window.location.hash) {
