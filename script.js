@@ -36,6 +36,9 @@ updateCountdown();
 function init() {
     console.log('init called!');
 
+    // Scroll to top of page on load
+    window.scrollTo(0, 0);
+
     // Ensure URL shows #home on page load
     if (!window.location.hash) {
         window.location.hash = 'home';
