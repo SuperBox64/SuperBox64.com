@@ -61,7 +61,7 @@
             name: 'Ice Blue Game Console Joystick Trackball Spinner',
             description: 'Comes with a Raspberry Pi5, active and passive cooling, preinstalled SuperBox64OS, joystick, 2 inch trackball with left, middle and right click, directional arcade game pad style buttons, silver spinner, 4 side buttons with 2 on each side, select and 1up start button. 4GB RAM 256GB SSD and 8GB RAM 512GB models available. Pictured as shown. Finest craftsmanship! SuperBox64 logo and name plate.',
             price: 399.99,
-            image: './images/SUPERBOX64_JackFrostRev2.jpeg',
+            image: './images/D93E76D9-BAAC-4947-84A8-17A0FB560A80_1_105_c.jpeg',
             altText: 'SuperBox64 Jack Frost Ice Blue Gaming Console - Premium Raspberry Pi5 Retro Arcade System - Blue LED Gaming Console - Trackball Joystick Spinner Controller - SuperBox64OS - Ultimate Retro Gaming Machine - Custom Arcade Console',
             paypalLink: 'https://www.paypal.com/ncp/payment/EGZCL9AURBV9G'
         },
