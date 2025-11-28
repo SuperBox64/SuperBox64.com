@@ -8,7 +8,10 @@
       "mcp__xcf-server__create_diff_from_doc",
       "mcp__xcf-server__apply_diff_to_doc",
       "Bash(mv:*)",
-      "Bash(open:*)"
+      "Bash(open:*)",
+      "WebFetch(domain:arcadeshock.com)",
+      "WebFetch(domain:focusattack.com)",
+      "WebFetch(domain:www.paradisearcadeshop.com)"
     ],
     "deny": [],
     "ask": []
