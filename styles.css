@@ -806,7 +806,7 @@ body {
     justify-content: center;
     gap: 0.5rem;
     padding-top: 10px;
-    font-size: 0.5rem;
+    font-size: calc(0.5rem + 4px);
     font-family: 'Press Start 2P', monospace;
     color: #00BFFF;
 }
