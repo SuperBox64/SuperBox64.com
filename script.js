@@ -140,10 +140,19 @@ function init() {
 
             // Get the target section
             const targetId = this.getAttribute('href');
-            const targetSection = document.querySelector(targetId);
 
-            // Home should scroll to top (0), others get 100px offset
-            const offset = targetId === '#home' ? 0 : 100;
+            // Home should scroll to absolute top (0)
+            if (targetId === '#home') {
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+                return;
+            }
+
+            // Other sections get 100px offset
+            const targetSection = document.querySelector(targetId);
+            const offset = 100;
             const elementPosition = targetSection.getBoundingClientRect().top;
             const offsetPosition = elementPosition + window.pageYOffset - offset;
 
