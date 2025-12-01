@@ -142,8 +142,14 @@ function init() {
             const targetId = this.getAttribute('href');
             const targetSection = document.querySelector(targetId);
 
-            // Smooth scroll to the section
-            targetSection.scrollIntoView({
+            // Calculate offset (navbar + promo banner height, approximately 100px)
+            const offset = 100;
+            const elementPosition = targetSection.getBoundingClientRect().top;
+            const offsetPosition = elementPosition + window.pageYOffset - offset;
+
+            // Smooth scroll to the section with offset
+            window.scrollTo({
+                top: offsetPosition,
                 behavior: 'smooth'
             });
         });
@@ -165,7 +171,13 @@ function init() {
     if (ctaButton) {
         ctaButton.addEventListener('click', function(e) {
             e.preventDefault();
-            document.querySelector('#products').scrollIntoView({
+            const targetSection = document.querySelector('#products');
+            const offset = 100;
+            const elementPosition = targetSection.getBoundingClientRect().top;
+            const offsetPosition = elementPosition + window.pageYOffset - offset;
+
+            window.scrollTo({
+                top: offsetPosition,
                 behavior: 'smooth'
             });
         });
