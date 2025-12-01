@@ -800,6 +800,13 @@ body {
     text-decoration: underline;
 }
 
+.footer-christmas {
+    font-size: 0.85rem;
+    color: #00FF00;
+    text-align: center;
+    margin-top: 0.25rem;
+}
+
 .footer-content p {
     padding: 0.5rem 1rem;
     background: rgba(255,255,255,0.05);
