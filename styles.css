@@ -807,6 +807,20 @@ body {
     padding-top: 10px;
 }
 
+.footer-creator {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding-top: 10px;
+    font-size: 0.75rem;
+    color: var(--text-gray);
+}
+
+.footer-creator img {
+    opacity: 0.8;
+}
+
 .footer-content p {
     padding: 0.5rem 1rem;
     background: rgba(255,255,255,0.05);
