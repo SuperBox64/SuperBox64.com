@@ -150,9 +150,9 @@ function init() {
                 return;
             }
 
-            // Other sections get 150px offset
+            // Other sections get 200px offset
             const targetSection = document.querySelector(targetId);
-            const offset = 150;
+            const offset = 200;
             const elementPosition = targetSection.getBoundingClientRect().top;
             const offsetPosition = elementPosition + window.pageYOffset - offset;
 
@@ -181,7 +181,7 @@ function init() {
         ctaButton.addEventListener('click', function(e) {
             e.preventDefault();
             const targetSection = document.querySelector('#products');
-            const offset = 150;
+            const offset = 200;
             const elementPosition = targetSection.getBoundingClientRect().top;
             const offsetPosition = elementPosition + window.pageYOffset - offset;
 
