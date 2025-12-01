@@ -165,6 +165,23 @@ body {
     background-color: var(--primary-blue);
 }
 
+.nav-sponsor {
+    font-size: 0.75rem;
+    color: var(--text-gray);
+    text-align: center;
+    padding: 0.25rem 0;
+    width: 100%;
+}
+
+.nav-sponsor a {
+    color: var(--primary-blue);
+    text-decoration: none;
+}
+
+.nav-sponsor a:hover {
+    text-decoration: underline;
+}
+
 .burger-menu {
     display: none;
     cursor: pointer;
