@@ -142,8 +142,8 @@ function init() {
             const targetId = this.getAttribute('href');
             const targetSection = document.querySelector(targetId);
 
-            // Calculate offset (navbar + promo banner height, approximately 100px)
-            const offset = 100;
+            // Home should scroll to top (0), others get 100px offset
+            const offset = targetId === '#home' ? 0 : 100;
             const elementPosition = targetSection.getBoundingClientRect().top;
             const offsetPosition = elementPosition + window.pageYOffset - offset;
 
