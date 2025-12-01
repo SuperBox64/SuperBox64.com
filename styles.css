@@ -45,14 +45,11 @@ body {
     font-size: 1.2rem;
     font-weight: bold;
     color: #000;
-    text-shadow:
-        0 0 2px #fff,
-        0 0 4px #fff;
+    text-shadow: none;
     text-transform: uppercase;
     letter-spacing: 0.05em;
     padding: 0.25rem 0.5rem;
     display: inline-block;
-    filter: drop-shadow(0 0 1px #fff) drop-shadow(0 0 2px #fff);
 }
 
 .promo-countdown-label {
