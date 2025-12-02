@@ -196,58 +196,50 @@ function init() {
     const contactForm = document.getElementById('contactForm');
 
     if (contactForm) {
-        // Initialize EmailJS
-        const EMAILJS_SERVICE_ID = 'service_pw8qz6o';
-        const EMAILJS_TEMPLATE_ID = 'template_f58xj1n';
-        const EMAILJS_PUBLIC_KEY = 'GW7NGq-mx44EHtljw';
-
-        // Initialize EmailJS with your public key
-        emailjs.init(EMAILJS_PUBLIC_KEY);
-
         contactForm.addEventListener('submit', function(e) {
             e.preventDefault();
 
             // Get form data
-            const formData = {
-                name: document.getElementById('name').value,
-                email: document.getElementById('email').value,
-                message: document.getElementById('message').value
-            };
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
 
             // Validate form data
-            if (!formData.name || !formData.email || !formData.message) {
+            if (!name || !email || !message) {
                 showMessage('Please fill in all fields.', 'error');
                 return;
             }
 
             // Validate email format
             const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-            if (!emailRegex.test(formData.email)) {
+            if (!emailRegex.test(email)) {
                 showMessage('Please enter a valid email address.', 'error');
                 return;
             }
 
-            // Show loading state
-            const submitButton = contactForm.querySelector('.submit-button');
-            const originalText = submitButton.textContent;
-            submitButton.textContent = 'Sending...';
-            submitButton.disabled = true;
+            // Decode base64 email address
+            const toEmail = atob('c3RhcnBsYXlyQGljbG91ZC5jb20=');
 
-            // Use actual EmailJS to send emails
-            emailjs.send(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, formData, EMAILJS_PUBLIC_KEY)
-                .then(function(response) {
-                    console.log('SUCCESS!', response.status, response.text);
-                    showMessage('Thank you! Your message has been sent successfully.', 'success');
-                    contactForm.reset();
-                })
-                .catch(function(error) {
-                    console.error('FAILED...', error);
-                    showMessage('Sorry, there was an error sending your message. Please try again.', 'error');
-                })
-                .finally(function() {
-                    submitButton.textContent = originalText;
-                    submitButton.disabled = false;
-                });
+            // Create mailto link with form data
+            const subject = encodeURIComponent('Contact from ' + name);
+            const body = encodeURIComponent(
+                'Name: ' + name + '\n' +
+                'Email: ' + email + '\n\n' +
+                'Message:\n' + message
+            );
+
+            const mailtoLink = 'mailto:' + toEmail + '?subject=' + subject + '&body=' + body;
+
+            // Open email client
+            window.location.href = mailtoLink;
+
+            // Show success message
+            showMessage('Opening your email client...', 'success');
+
+            // Reset form after a short delay
+            setTimeout(function() {
+                contactForm.reset();
+            }, 1000);
         });
     }
 
