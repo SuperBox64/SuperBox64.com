@@ -73,16 +73,16 @@
             image: './images/superbox64_classic.jpeg',
             altText: 'SuperBox64 Classic Blue LED Trackball Gaming Console - Raspberry Pi5 Premium Retro System - Blue LED Trackball Arcade Console - Classic Gaming Hardware - Retro Emulation Station - Custom Game Console - Arcade Quality Gaming System',
             paypalLink: 'https://www.paypal.com/ncp/payment/9S6SLHCS9BUWQ'
-        },
-        {
-            id: 'GRS-PPSP-005',
-            name: 'Push Pull Original Button Hole Spinner Upgrade',
-            description: 'GRS Push Pull Arcade Spinner',
-            price: 99.99,
-            image: './images/grs_push_pull_spinner.jpeg',
-            altText: 'GRS Push Pull Arcade Spinner Upgrade - Arcade Spinner Knob - Game Controller Spinner Mod - Retro Arcade Parts - Gaming Spinner Wheel - Arcade Cabinet Spinner - Custom Arcade Controller Parts - Arcade Hardware Upgrade',
-            paypalLink: 'https://www.paypal.com/ncp/payment/Z3AM4TWMVZB3J'
         }
+        // {
+        //     id: 'GRS-PPSP-005',
+        //     name: 'Push Pull Original Button Hole Spinner Upgrade',
+        //     description: 'GRS Push Pull Arcade Spinner',
+        //     price: 99.99,
+        //     image: './images/grs_push_pull_spinner.jpeg',
+        //     altText: 'GRS Push Pull Arcade Spinner Upgrade - Arcade Spinner Knob - Game Controller Spinner Mod - Retro Arcade Parts - Gaming Spinner Wheel - Arcade Cabinet Spinner - Custom Arcade Controller Parts - Arcade Hardware Upgrade',
+        //     paypalLink: 'https://www.paypal.com/ncp/payment/Z3AM4TWMVZB3J'
+        // }
     ];
 
     // Function to render products
