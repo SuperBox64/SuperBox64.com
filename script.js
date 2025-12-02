@@ -211,13 +211,14 @@ function init() {
 
             // Decode base64 email addresses
             const toEmail = atob('dG9kZEBzdXBlcmJveDY0LmNvbQ==');
-            const ccEmail = atob('dG9kZEBpbmtwZW4uaW8=');
+            const ccEmail1 = atob('dG9kZEBpbmtwZW4uaW8=');
+            const ccEmail2 = atob('c3RhcnBsYXlyQGljbG91ZC5jb20=');
 
             // Create mailto link with form data
             const subject = encodeURIComponent('SuperBox64 product inquiry from ' + name);
             const body = encodeURIComponent(message + '\n\nSincerely,\n\n' + name);
 
-            const mailtoLink = 'mailto:' + toEmail + '?cc=' + ccEmail + '&subject=' + subject + '&body=' + body;
+            const mailtoLink = 'mailto:' + toEmail + '?cc=' + ccEmail1 + ',' + ccEmail2 + '&subject=' + subject + '&body=' + body;
 
             // Open email client
             window.location.href = mailtoLink;
