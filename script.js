@@ -209,14 +209,15 @@ function init() {
                 return;
             }
 
-            // Decode base64 email address
-            const toEmail = atob('c3RhcnBsYXlyQGljbG91ZC5jb20=');
+            // Decode base64 email addresses
+            const toEmail = atob('dG9kZEBzdXBlcmJveDY0LmNvbQ==');
+            const ccEmail = atob('dG9kZEBpbmtwZW4uaW8=');
 
             // Create mailto link with form data
             const subject = encodeURIComponent('Message from ' + name);
             const body = encodeURIComponent(message);
 
-            const mailtoLink = 'mailto:' + toEmail + '?subject=' + subject + '&body=' + body;
+            const mailtoLink = 'mailto:' + toEmail + '?cc=' + ccEmail + '&subject=' + subject + '&body=' + body;
 
             // Open email client
             window.location.href = mailtoLink;
