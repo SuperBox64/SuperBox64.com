@@ -201,19 +201,11 @@ function init() {
 
             // Get form data
             const name = document.getElementById('name').value;
-            const email = document.getElementById('email').value;
             const message = document.getElementById('message').value;
 
             // Validate form data
-            if (!name || !email || !message) {
+            if (!name || !message) {
                 showMessage('Please fill in all fields.', 'error');
-                return;
-            }
-
-            // Validate email format
-            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-            if (!emailRegex.test(email)) {
-                showMessage('Please enter a valid email address.', 'error');
                 return;
             }
 
@@ -221,12 +213,8 @@ function init() {
             const toEmail = atob('c3RhcnBsYXlyQGljbG91ZC5jb20=');
 
             // Create mailto link with form data
-            const subject = encodeURIComponent('Contact from ' + name);
-            const body = encodeURIComponent(
-                'Name: ' + name + '\n' +
-                'Email: ' + email + '\n\n' +
-                'Message:\n' + message
-            );
+            const subject = encodeURIComponent('Message from ' + name);
+            const body = encodeURIComponent(message);
 
             const mailtoLink = 'mailto:' + toEmail + '?subject=' + subject + '&body=' + body;
 
