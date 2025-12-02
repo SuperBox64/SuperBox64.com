@@ -214,8 +214,8 @@ function init() {
             const ccEmail = atob('dG9kZEBpbmtwZW4uaW8=');
 
             // Create mailto link with form data
-            const subject = encodeURIComponent('Message from ' + name);
-            const body = encodeURIComponent(message);
+            const subject = encodeURIComponent('SuperBox64 product inquiry from ' + name);
+            const body = encodeURIComponent(message + '\n\nSincerely,\n\n' + name);
 
             const mailtoLink = 'mailto:' + toEmail + '?cc=' + ccEmail + '&subject=' + subject + '&body=' + body;
 
