@@ -420,19 +420,14 @@ body {
         display: none;
     }
 
-    /* Hide promo countdown label on mobile */
-    .promo-countdown-label {
-        display: none;
+    /* Hide promo text on mobile */
+    .promo-text {
+        display: none !important;
     }
 
     /* Hide nav sponsor on mobile */
     .nav-sponsor {
         display: none !important;
-    }
-
-    .promo-text {
-        font-size: 0.9rem;
-        padding: 0 1rem;
     }
 
     .promo-countdown {
