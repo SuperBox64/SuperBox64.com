@@ -420,6 +420,16 @@ body {
         display: none;
     }
 
+    /* Hide promo countdown label on mobile */
+    .promo-countdown-label {
+        display: none;
+    }
+
+    /* Hide nav sponsor on mobile */
+    .nav-sponsor {
+        display: none !important;
+    }
+
     .promo-text {
         font-size: 0.9rem;
         padding: 0 1rem;
@@ -435,6 +445,22 @@ body {
 
     .promo-countdown-segment {
         min-width: 40px;
+    }
+
+    /* Hide about section images on mobile */
+    .about-image {
+        display: none !important;
+    }
+
+    /* Make about section single column on mobile */
+    .about-grid {
+        display: block !important;
+        grid-template-columns: 1fr !important;
+    }
+
+    .about-text {
+        width: 100%;
+        max-width: 100%;
     }
 
     .burger-menu {
