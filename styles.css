@@ -430,6 +430,11 @@ body {
         display: none !important;
     }
 
+    /* Move navbar up on mobile */
+    .navbar {
+        margin-top: -45px;
+    }
+
     .promo-countdown {
         gap: 0.5rem;
     }
