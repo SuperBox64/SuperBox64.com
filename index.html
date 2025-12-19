@@ -220,7 +220,6 @@
     </script>
     <div class="promo-banner">
         <div class="promo-banner-content">
-            <div class="promo-text" id="promo-text"></div>
             <div class="promo-countdown-label">Time to Save Christmas</div>
             <div class="promo-countdown">
                 <div class="promo-countdown-segment">
@@ -424,12 +423,6 @@
             }
 
             const country = hostname.endsWith('.uk') ? 'UK' : 'USA';
-
-            // Set promo banner text
-            const promoText = document.getElementById('promo-text');
-            if (promoText) {
-                promoText.innerHTML = '<span style="color: #000;">1980 CHRISTMAS SPECIAL</span> <span style="color:#00FF00; text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000, -1px 0 0 #000, 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000;">ALL SUPERBOX</span> <span style="color: #000;">ITEMS ARE $100 USD OFF!</span>';
-            }
 
             const heroDomain = document.getElementById('hero-domain');
             if (heroDomain) {
