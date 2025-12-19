@@ -158,12 +158,19 @@ body {
     background-color: var(--primary-blue);
 }
 
+.nav-right-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    padding-right: 1rem;
+}
+
 .nav-sponsor {
     font-size: 0.75rem;
     color: var(--text-gray);
-    text-align: center;
-    padding: 0.25rem 0;
-    width: 100%;
+    text-align: right;
+    padding: 0;
 }
 
 .nav-sponsor a {
@@ -173,6 +180,17 @@ body {
 
 .nav-sponsor a:hover {
     text-decoration: underline;
+}
+
+.nav-paypal {
+    font-size: 0.75rem;
+    color: var(--text-gray);
+    text-align: right;
+    padding: 0;
+    padding-top: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
 }
 
 .burger-menu {
@@ -426,7 +444,7 @@ body {
     }
 
     /* Hide nav sponsor on mobile */
-    .nav-sponsor {
+    .nav-right-info {
         display: none !important;
     }
 
@@ -835,6 +853,17 @@ body {
 
 .footer-sponsor a:hover {
     text-decoration: underline;
+}
+
+.footer-paypal {
+    font-size: 0.75rem;
+    color: var(--text-gray);
+    text-align: center;
+    padding: 0;
+    margin-top: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .footer-christmas {

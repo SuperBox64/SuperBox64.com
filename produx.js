@@ -101,7 +101,7 @@
                             <span itemprop="priceCurrency" content="USD">$</span><span itemprop="price" content="${product.price}">${product.price}</span>
                             <meta itemprop="availability" content="https://schema.org/InStock">
                         </div>
-                        <a href="${product.paypalLink}" class="buy-button" target="_blank" itemprop="url">Buy Now</a>
+                        <a href="${product.paypalLink}" class="buy-button" target="_blank" itemprop="url">Pay with <img src="images/paypal-logo-white.svg" alt="PayPal" height="22" style="vertical-align: middle; margin-left: 5px;"></a>
                     </div>
                 </div>
             `;

@@ -14,7 +14,11 @@
       "WebFetch(domain:www.paradisearcadeshop.com)",
       "mcp__xcf-server__build_project",
       "Bash(git add:*)",
-      "Bash(git commit:*)"
+      "Bash(git commit:*)",
+      "WebSearch",
+      "WebFetch(domain:www.paypal.com)",
+      "WebFetch(domain:developer.paypal.com)",
+      "WebFetch(domain:www.paypalobjects.com)"
     ],
     "deny": [],
     "ask": []
