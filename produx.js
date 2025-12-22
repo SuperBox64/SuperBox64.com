@@ -90,7 +90,45 @@
         const productsGrid = document.querySelector('.products-grid');
         productsGrid.innerHTML = ''; // Clear existing content
 
-        products.forEach(product => {
+        // USB Controllers section (first 4 products)
+        const usbHeader = `
+            <div class="products-section-header" style="grid-column: 1 / -1; text-align: center; padding: 1rem 0; margin-bottom: 1rem;">
+                <h3 style="font-family: 'CCUpUpAndAway', 'Press Start 2P'; font-size: 1.8rem; color: #00BFFF; text-shadow: 0 0 10px rgba(0,191,255,0.5);">USB Arcade Controllers</h3>
+                <p style="color: #ccc; font-size: 1rem; margin-top: 0.5rem;">Works with PC, Mac, Linux, Raspberry Pi, PS3</p>
+            </div>
+        `;
+        productsGrid.innerHTML += usbHeader;
+
+        // Render USB products (first 4)
+        products.slice(0, 4).forEach(product => {
+            const productCard = `
+                <div class="product-card" itemscope itemtype="https://schema.org/Product">
+                    <img src="${product.image}" alt="${product.altText || product.name}" itemprop="image">
+                    <div class="product-content">
+                        <h3 itemprop="name">${product.name}</h3>
+                        <p itemprop="description">${product.description}</p>
+                        <div class="price" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                            <span itemprop="priceCurrency" content="USD">$</span><span itemprop="price" content="${product.price}">${product.price}</span>
+                            <meta itemprop="availability" content="https://schema.org/InStock">
+                        </div>
+                        <a href="${product.paypalLink}" class="buy-button" target="_blank" itemprop="url">Pay with <img src="images/paypal-logo-white.svg" alt="PayPal" height="22" style="vertical-align: middle; margin-left: 5px;"></a>
+                    </div>
+                </div>
+            `;
+            productsGrid.innerHTML += productCard;
+        });
+
+        // Game Consoles section (next 4 products)
+        const consoleHeader = `
+            <div class="products-section-header" style="grid-column: 1 / -1; text-align: center; padding: 1rem 0; margin-top: 2rem; margin-bottom: 1rem;">
+                <h3 style="font-family: 'CCUpUpAndAway', 'Press Start 2P'; font-size: 1.8rem; color: #FF6347; text-shadow: 0 0 10px rgba(255,99,71,0.5);">Raspberry Pi5 Game Consoles</h3>
+                <p style="color: #ccc; font-size: 1rem; margin-top: 0.5rem;">SuperBox64OS with 12+ Emulators, 10-Foot TV Interface, Plug & Play</p>
+            </div>
+        `;
+        productsGrid.innerHTML += consoleHeader;
+
+        // Render Console products (next 4)
+        products.slice(4, 8).forEach(product => {
             const productCard = `
                 <div class="product-card" itemscope itemtype="https://schema.org/Product">
                     <img src="${product.image}" alt="${product.altText || product.name}" itemprop="image">
