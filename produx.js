@@ -4,7 +4,7 @@
     const products = [
         {
             id: 'SB64-USBC-009',
-            name: 'USB Retro Arcade Game Controller ACDC Back N Black',
+            name: 'ACDC Back N Black Controller',
             description: 'ACDC Back N Black Lid with Gold Red Blue Body, all Black buttons, 2" White trackball, Silver spinner, Atari DB-9 port. 8ft detachable USB cable, heavy duty design. Patent pending by designer Todd Bruss. Compatible with Windows, Mac, Linux, Raspberry Pi, PS3.',
             price: 299.99,
             image: './images/superbox64acdcbackinblack-newsuperbox64bodystyle.JPG',
@@ -13,7 +13,7 @@
         },
         {
             id: 'SB64-USBC-008',
-            name: 'USB Retro Arcade Box Controller Atari Fire',
+            name: 'Atari Fire Controller',
             description: 'White, Yellow, Orange, Red concave buttons, Yellow trackball, Silver spinner, Red joystick, White select start buttons, White Left Middle Right click buttons, Atari DB-9 port on the front. USB port on the back, 8 foot Black USB cable that\'s detachable! 4 side buttons, Heavy Duty design.',
             price: 299.99,
             image: './images/superbox64_atarifire.jpeg',
@@ -22,7 +22,7 @@
         },
         {
             id: 'SB64-USBC-007',
-            name: 'USB Super Arcade Game Controller Atari Orange',
+            name: 'Atari Orange Controller',
             description: 'Orange buttons, Yellow trackball, Silver spinner, Orange joystick, White select start buttons, Atari DB-9 port on the front. USB port on the back, 8 foot Black USB cable that\'s detachable! 4 side buttons, Heavy Duty design. Case, layout, logo, colorway patent pending screw system by designer Todd Bruss.',
             price: 299.99,
             image: './images/superbox64atariorange.jpg',
@@ -31,7 +31,7 @@
         },
         {
             id: 'SB64-TKBL-006',
-            name: '3 button, 2 Inch Arcade Trackball',
+            name: '2 Inch Arcade Trackball',
             description: 'Black Lid Matte Finish, Black Red Blue, White Trackball ball. USB out port on back, Color: Glossy White Trackball and Arcade Convex buttons, Left Middle and Right Click, 8 foot USB black cable, 4 Super rubber feet. Max 2 items',
             price: 129.99,
             image: './images/superbox64_trackball.jpeg',
