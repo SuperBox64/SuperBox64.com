@@ -19,7 +19,8 @@
       "WebFetch(domain:www.paypal.com)",
       "WebFetch(domain:developer.paypal.com)",
       "WebFetch(domain:www.paypalobjects.com)",
-      "Bash(Game Consoles\" to product grid\n- First 4 products are USB controllers \\(PC/Mac/Linux/PS3\\)\n- Next 4 products are Pi5 game consoles with emulators\n- Updated schema.org structured data for both product types\n- Updated Open Graph and Twitter meta tags\n\n🤖 Generated with [Claude Code]\\(https://claude.com/claude-code\\)\n\nCo-Authored-By: Claude Opus 4.5 <noreply@anthropic.com>\nEOF\n\\)\")"
+      "Bash(Game Consoles\" to product grid\n- First 4 products are USB controllers \\(PC/Mac/Linux/PS3\\)\n- Next 4 products are Pi5 game consoles with emulators\n- Updated schema.org structured data for both product types\n- Updated Open Graph and Twitter meta tags\n\n🤖 Generated with [Claude Code]\\(https://claude.com/claude-code\\)\n\nCo-Authored-By: Claude Opus 4.5 <noreply@anthropic.com>\nEOF\n\\)\")",
+      "Bash(git checkout:*)"
     ],
     "deny": [],
     "ask": []
