@@ -92,8 +92,8 @@
 
         // USB Controllers section (first 4 products)
         const usbHeader = `
-            <div class="products-section-header" style="grid-column: 1 / -1; text-align: center; padding: 1rem 0; margin-bottom: 1rem;">
-                <h3 style="font-family: 'CCUpUpAndAway', 'Press Start 2P'; font-size: 1.8rem; color: #00BFFF; text-shadow: 0 0 10px rgba(0,191,255,0.5);">USB Arcade Controllers</h3>
+            <div class="products-section-header" style="grid-column: 1 / -1; text-align: center; margin-bottom: 1rem;">
+                <h2 style="font-family: 'CCUpUpAndAway', 'Press Start 2P'; font-size: 2.4rem; color: #fff; text-shadow: 0 0 10px rgba(0,123,255,0.3);">USB Arcade Controllers</h2>
                 <p style="color: #ccc; font-size: 1rem; margin-top: 0.5rem;">Works with PC, Mac, Linux, Raspberry Pi, PS3</p>
             </div>
         `;
@@ -120,8 +120,8 @@
 
         // Game Consoles section (next 4 products)
         const consoleHeader = `
-            <div class="products-section-header" style="grid-column: 1 / -1; text-align: center; padding: 1rem 0; margin-top: 2rem; margin-bottom: 1rem;">
-                <h3 style="font-family: 'CCUpUpAndAway', 'Press Start 2P'; font-size: 1.8rem; color: #FF6347; text-shadow: 0 0 10px rgba(255,99,71,0.5);">Raspberry Pi5 Game Consoles</h3>
+            <div class="products-section-header" style="grid-column: 1 / -1; text-align: center; margin-top: 1rem; margin-bottom: 1rem;">
+                <h2 style="font-family: 'CCUpUpAndAway', 'Press Start 2P'; font-size: 2.4rem; color: #fff; text-shadow: 0 0 10px rgba(0,123,255,0.3);">Raspberry Pi5 Game Consoles</h2>
                 <p style="color: #ccc; font-size: 1rem; margin-top: 0.5rem;">SuperBox64OS with 12+ Emulators, 10-Foot TV Interface, Plug & Play</p>
             </div>
         `;
