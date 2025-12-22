@@ -41,7 +41,7 @@
         {
             id: 'SB64-SMYT-003',
             name: 'Retro Super64 Game Console Joystick Trackball Spinner',
-            description: 'Comes with a Raspberry Pi5, active and passive cooling, 64GB memory card for the preinstalled SuperBox64OS, joystick, 2 inch trackball with left, middle and right click, directional arcade game pad style buttons, silver spinner, 4 side buttons with 2 on each side, select and 1up start button. Pictured as shown. Finest craftsmanship! SuperBox64 logo and name plate.',
+            description: 'Comes with a Raspberry Pi5, active and passive cooling, preinstalled SuperBox64OS, joystick, 2 inch trackball with left, middle and right click, directional arcade game pad style buttons, silver spinner, 4 side buttons with 2 on each side, select and 1up start button. Available in 4GB RAM 256GB SSD or 8GB RAM 500GB SSD configurations. Pictured as shown. Finest craftsmanship! SuperBox64 logo and name plate.',
             price: 399.99,
             image: './images/superbox64_yellowtrak.jpeg',
             altText: 'SuperBox64 Yellow Trackball Gaming Console - Raspberry Pi5 Retro Arcade System - Yellow Trackball Joystick Spinner - SuperBox64OS Preinstalled - Retro Emulation Console - Custom Gaming System Todd Bruss - Arcade Machine Console',
@@ -50,7 +50,7 @@
         {
             id: 'SB64-NSWT-004',
             name: 'Classic Arcade Game Console Joystick Trackball Spinner',
-            description: 'Comes with a Raspberry Pi5, active and passive cooling, 64GB memory card for the preinstalled SuperBox64OS, joystick, 2 inch trackball with left, middle and right click, directional arcade game pad style buttons, silver spinner, 4 side buttons with 2 on each side, select and 1up start button. Pictured as shown. Finest craftsmanship! SuperBox64 logo and name plate.',
+            description: 'Comes with a Raspberry Pi5, active and passive cooling, preinstalled SuperBox64OS, joystick, 2 inch trackball with left, middle and right click, directional arcade game pad style buttons, silver spinner, 4 side buttons with 2 on each side, select and 1up start button. Available in 4GB RAM 256GB SSD or 8GB RAM 500GB SSD configurations. Pictured as shown. Finest craftsmanship! SuperBox64 logo and name plate.',
             price: 399.99,
             image: './images/superbox64_whitetrak.jpeg',
             altText: 'SuperBox64 White Trackball Retro Gaming Console - Raspberry Pi5 Arcade System - White Trackball Gaming Console - Classic Game Emulator - Retro Console with Joystick Spinner - SuperBox64OS - Custom Built Gaming Hardware',
@@ -59,7 +59,7 @@
         {
             id: 'SB64-IBJF-001',
             name: 'Ice Blue Game Console Joystick Trackball Spinner',
-            description: 'Comes with a Raspberry Pi5, active and passive cooling, preinstalled SuperBox64OS, joystick, 2 inch trackball with left, middle and right click, directional arcade game pad style buttons, silver spinner, 4 side buttons with 2 on each side, select and 1up start button. 4GB RAM 256GB SSD and 8GB RAM 512GB models available. Pictured as shown. Finest craftsmanship! SuperBox64 logo and name plate.',
+            description: 'Comes with a Raspberry Pi5, active and passive cooling, preinstalled SuperBox64OS, joystick, 2 inch trackball with left, middle and right click, directional arcade game pad style buttons, silver spinner, 4 side buttons with 2 on each side, select and 1up start button. Available in 4GB RAM 256GB SSD or 8GB RAM 500GB SSD configurations. Pictured as shown. Finest craftsmanship! SuperBox64 logo and name plate.',
             price: 399.99,
             image: './images/D93E76D9-BAAC-4947-84A8-17A0FB560A80_1_105_c.jpeg',
             altText: 'SuperBox64 Jack Frost Ice Blue Gaming Console - Premium Raspberry Pi5 Retro Arcade System - Blue LED Gaming Console - Trackball Joystick Spinner Controller - SuperBox64OS - Ultimate Retro Gaming Machine - Custom Arcade Console',
