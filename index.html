@@ -247,6 +247,8 @@
     <script>
         if (!SHOW_PROMO_BANNER) {
             document.getElementById('promo-banner').style.display = 'none';
+            // Remove the 95px top offset from navbar when banner is hidden
+            document.head.insertAdjacentHTML('beforeend', '<style>.navbar { top: 0 !important; }</style>');
         }
     </script>
     <nav class="navbar">
