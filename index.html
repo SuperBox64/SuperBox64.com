@@ -218,7 +218,10 @@
         document.documentElement.scrollTop = 0;
         document.body.scrollTop = 0;
     </script>
-    <div class="promo-banner">
+    <!-- PROMO BANNER TOGGLE: Set to true to show, false to hide -->
+    <script>var SHOW_PROMO_BANNER = false;</script>
+
+    <div class="promo-banner" id="promo-banner">
         <div class="promo-banner-content">
             <div class="promo-countdown-label">Time to Save Christmas</div>
             <div class="promo-countdown">
@@ -241,6 +244,11 @@
             </div>
         </div>
     </div>
+    <script>
+        if (!SHOW_PROMO_BANNER) {
+            document.getElementById('promo-banner').style.display = 'none';
+        }
+    </script>
     <nav class="navbar">
         <div class="logo">
             <a href="#home">
