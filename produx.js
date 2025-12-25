@@ -93,7 +93,7 @@
         // USB Controllers section (first 4 products)
         const usbHeader = `
             <div class="products-section-header" style="grid-column: 1 / -1; text-align: center;">
-                <h2 style="font-family: 'CCUpUpAndAway', 'Press Start 2P'; font-size: 2.4rem; color: #fff; text-shadow: 0 0 10px rgba(0,123,255,0.3); margin: 0;">USB Arcade Controllers</h2>
+                <h2 style="font-family: 'CCUpUpAndAway', 'Press Start 2P'; font-size: 2.4rem; color: #fff; text-shadow: 0 0 10px rgba(0,123,255,0.3); margin: 0;">USB Retro Arcade Game Controllers</h2>
                 <p style="color: #ccc; font-size: 1rem; margin: 0.25rem 0 0 0;">Works with PC, Mac, Linux, Raspberry Pi, PS3</p>
             </div>
         `;
@@ -121,7 +121,7 @@
         // Game Consoles section (next 4 products)
         const consoleHeader = `
             <div class="products-section-header" style="grid-column: 1 / -1; text-align: center;">
-                <h2 style="font-family: 'CCUpUpAndAway', 'Press Start 2P'; font-size: 2.4rem; color: #fff; text-shadow: 0 0 10px rgba(0,123,255,0.3); margin: 0;">Raspberry Pi5 Game Consoles</h2>
+                <h2 style="font-family: 'CCUpUpAndAway', 'Press Start 2P'; font-size: 2.4rem; color: #fff; text-shadow: 0 0 10px rgba(0,123,255,0.3); margin: 0;">Pi5 Retro Arcade Emu Game Consoles</h2>
                 <p style="color: #ccc; font-size: 1rem; margin: 0.25rem 0 0 0;">SuperBox64OS with 12+ Emulators, 10-Foot TV Interface, Plug & Play</p>
             </div>
         `;
