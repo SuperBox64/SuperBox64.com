@@ -6,7 +6,7 @@
             id: 'SB64-USBC-009',
             name: 'ACDC Back N Black Controller',
             description: 'ACDC Back N Black Lid with Gold Red Blue Body, all Black buttons, 2" White trackball, Silver spinner, Atari DB-9 port. 8ft detachable USB cable, heavy duty design. Patent pending by designer Todd Bruss. Compatible with Windows, Mac, Linux, Raspberry Pi, PS3.',
-            price: 349.99,
+            price: 399.99,
             image: './images/superbox64acdcbackinblack-newsuperbox64bodystyle.JPG',
             altText: 'SuperBox64 ACDC Back N Black USB Arcade Controller - Retro Gaming Joystick Trackball Spinner - Windows Mac Linux Raspberry Pi PS3 - Custom Arcade Stick DB9 Port - Todd Bruss Designer - Fighting Game Controller',
             paypalLink: 'https://www.paypal.com/ncp/payment/XVRFHUZA4N7J8'
@@ -15,7 +15,7 @@
             id: 'SB64-USBC-008',
             name: 'Atari Fire Controller',
             description: 'White, Yellow, Orange, Red concave buttons, Yellow trackball, Silver spinner, Red joystick, White select start buttons, White Left Middle Right click buttons, Atari DB-9 port on the front. USB port on the back, 8 foot Black USB cable that\'s detachable! 4 side buttons, Heavy Duty design.',
-            price: 349.99,
+            price: 399.99,
             image: './images/superbox64_atarifire.jpeg',
             altText: 'SuperBox64 Atari Fire USB Arcade Game Controller - Red Orange Yellow Buttons - Arcade Trackball Joystick Spinner - Retro Gaming Controller - Atari DB9 Compatible - MAME Emulation Controller - Custom Arcade Hardware',
             paypalLink: 'https://www.paypal.com/ncp/payment/UPUGZCFF7DA36'
@@ -24,7 +24,7 @@
             id: 'SB64-USBC-007',
             name: 'Atari Orange Controller',
             description: 'Orange buttons, Yellow trackball, Silver spinner, Orange joystick, White select start buttons, Atari DB-9 port on the front. USB port on the back, 8 foot Black USB cable that\'s detachable! 4 side buttons, Heavy Duty design. Case, layout, logo, colorway patent pending screw system by designer Todd Bruss.',
-            price: 349.99,
+            price: 399.99,
             image: './images/superbox64atariorange.jpg',
             altText: 'SuperBox64 Atari Orange USB Game Controller - Custom Arcade Stick Orange Joystick Yellow Trackball - Retro Gaming Hardware - DB9 Atari Port - Todd Bruss Patent Pending Design - Arcade Fighting Stick',
             paypalLink: 'https://www.paypal.com/ncp/payment/92AM3BSP58U6J'
@@ -33,7 +33,7 @@
             id: 'SB64-TKBL-006',
             name: '2 Inch Arcade Trackball',
             description: 'Black Lid Matte Finish, Black Red Blue, White Trackball ball. USB out port on back, Color: Glossy White Trackball and Arcade Convex buttons, Left Middle and Right Click, 8 foot USB black cable, 4 Super rubber feet. Max 2 items',
-            price: 179.99,
+            price: 199.99,
             image: './images/superbox64_trackball.jpeg',
             altText: 'SuperBox64 Standalone USB Trackball Mouse - Arcade Style Trackball Controller - White 2 Inch Ball Left Middle Right Click - Gaming Trackball - Retro Arcade Mouse - PC Mac Compatible Trackball',
             paypalLink: 'https://www.paypal.com/ncp/payment/WXE8WKD4PTQ72'
@@ -42,7 +42,7 @@
             id: 'SB64-SMYT-003',
             name: 'Retro Super64 Game Console',
             description: 'Comes with a Raspberry Pi5, active and passive cooling, preinstalled SuperBox64OS, joystick, 2 inch trackball with left, middle and right click, directional arcade game pad style buttons, silver spinner, 4 side buttons with 2 on each side, select and 1up start button. Available in 4GB RAM 256GB SSD or 8GB RAM 500GB SSD configurations. Pictured as shown. Finest craftsmanship! SuperBox64 logo and name plate.',
-            price: 449.99,
+            price: 499.99,
             image: './images/superbox64_yellowtrak.jpeg',
             altText: 'SuperBox64 Yellow Trackball Gaming Console - Raspberry Pi5 Retro Arcade System - Yellow Trackball Joystick Spinner - SuperBox64OS Preinstalled - Retro Emulation Console - Custom Gaming System Todd Bruss - Arcade Machine Console',
             paypalLink: 'https://www.paypal.com/ncp/payment/WCMSTDZWA9KS2'
@@ -51,7 +51,7 @@
             id: 'SB64-NSWT-004',
             name: 'Classic Arcade Game Console',
             description: 'Comes with a Raspberry Pi5, active and passive cooling, preinstalled SuperBox64OS, joystick, 2 inch trackball with left, middle and right click, directional arcade game pad style buttons, silver spinner, 4 side buttons with 2 on each side, select and 1up start button. Available in 4GB RAM 256GB SSD or 8GB RAM 500GB SSD configurations. Pictured as shown. Finest craftsmanship! SuperBox64 logo and name plate.',
-            price: 449.99,
+            price: 499.99,
             image: './images/superbox64_whitetrak.jpeg',
             altText: 'SuperBox64 White Trackball Retro Gaming Console - Raspberry Pi5 Arcade System - White Trackball Gaming Console - Classic Game Emulator - Retro Console with Joystick Spinner - SuperBox64OS - Custom Built Gaming Hardware',
             paypalLink: 'https://www.paypal.com/ncp/payment/MJA2JFTKJZBNJ'
@@ -60,7 +60,7 @@
             id: 'SB64-IBJF-001',
             name: 'Ice Blue Game Console',
             description: 'Comes with a Raspberry Pi5, active and passive cooling, preinstalled SuperBox64OS, joystick, 2 inch trackball with left, middle and right click, directional arcade game pad style buttons, silver spinner, 4 side buttons with 2 on each side, select and 1up start button. Available in 4GB RAM 256GB SSD or 8GB RAM 500GB SSD configurations. Pictured as shown. Finest craftsmanship! SuperBox64 logo and name plate.',
-            price: 449.99,
+            price: 499.99,
             image: './images/D93E76D9-BAAC-4947-84A8-17A0FB560A80_1_105_c.jpeg',
             altText: 'SuperBox64 Jack Frost Ice Blue Gaming Console - Premium Raspberry Pi5 Retro Arcade System - Blue LED Gaming Console - Trackball Joystick Spinner Controller - SuperBox64OS - Ultimate Retro Gaming Machine - Custom Arcade Console',
             paypalLink: 'https://www.paypal.com/ncp/payment/EGZCL9AURBV9G'
@@ -69,7 +69,7 @@
             id: 'SB64-CBLT-002',
             name: 'Blue LED Light Game Console',
             description: '8GB RAM 512GB SSD. Comes with a Raspberry Pi5, active and passive cooling, preinstalled SuperBox64OS, joystick, 2 inch trackball with left, middle and right click, directional arcade game pad style buttons, silver spinner, 4 side buttons with 2 on each side, select and 1up start button. Pictured as shown. Finest craftsmanship! SuperBox64 logo and name plate.',
-            price: 549.99,
+            price: 599.99,
             image: './images/superbox64_classic.jpeg',
             altText: 'SuperBox64 Classic Blue LED Trackball Gaming Console - Raspberry Pi5 Premium Retro System - Blue LED Trackball Arcade Console - Classic Gaming Hardware - Retro Emulation Station - Custom Game Console - Arcade Quality Gaming System',
             paypalLink: 'https://www.paypal.com/ncp/payment/9S6SLHCS9BUWQ'
