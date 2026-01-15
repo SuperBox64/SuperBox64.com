@@ -41,8 +41,9 @@
         {
             id: 'SB64-SMYT-003',
             name: 'Retro Super64 Game Console',
-            description: 'Comes with a Raspberry Pi5, active and passive cooling, preinstalled SuperBox64OS, joystick, 2 inch trackball with left, middle and right click, directional arcade game pad style buttons, silver spinner, 4 side buttons with 2 on each side, select and 1up start button. Available in 4GB RAM 256GB SSD or 8GB RAM 500GB SSD configurations. Pictured as shown. Finest craftsmanship! SuperBox64 logo and name plate.',
+            description: 'Comes with a Raspberry Pi5, active and passive cooling, preinstalled SuperBox64OS, joystick, 2 inch trackball with left, middle and right click, directional arcade game pad style buttons, silver spinner, 4 side buttons with 2 on each side, select and 1up start button. Pictured as shown. Finest craftsmanship! SuperBox64 logo and name plate.',
             price: 499.99,
+            priceHigh: 599.99,
             image: './images/superbox64_yellowtrak.jpeg',
             altText: 'SuperBox64 Yellow Trackball Gaming Console - Raspberry Pi5 Retro Arcade System - Yellow Trackball Joystick Spinner - SuperBox64OS Preinstalled - Retro Emulation Console - Custom Gaming System Todd Bruss - Arcade Machine Console',
             paypalLink: 'https://www.paypal.com/ncp/payment/WCMSTDZWA9KS2'
@@ -50,8 +51,9 @@
         {
             id: 'SB64-NSWT-004',
             name: 'Classic Arcade Game Console',
-            description: 'Comes with a Raspberry Pi5, active and passive cooling, preinstalled SuperBox64OS, joystick, 2 inch trackball with left, middle and right click, directional arcade game pad style buttons, silver spinner, 4 side buttons with 2 on each side, select and 1up start button. Available in 4GB RAM 256GB SSD or 8GB RAM 500GB SSD configurations. Pictured as shown. Finest craftsmanship! SuperBox64 logo and name plate.',
+            description: 'Comes with a Raspberry Pi5, active and passive cooling, preinstalled SuperBox64OS, joystick, 2 inch trackball with left, middle and right click, directional arcade game pad style buttons, silver spinner, 4 side buttons with 2 on each side, select and 1up start button. Pictured as shown. Finest craftsmanship! SuperBox64 logo and name plate.',
             price: 499.99,
+            priceHigh: 599.99,
             image: './images/superbox64_whitetrak.jpeg',
             altText: 'SuperBox64 White Trackball Retro Gaming Console - Raspberry Pi5 Arcade System - White Trackball Gaming Console - Classic Game Emulator - Retro Console with Joystick Spinner - SuperBox64OS - Custom Built Gaming Hardware',
             paypalLink: 'https://www.paypal.com/ncp/payment/MJA2JFTKJZBNJ'
@@ -59,8 +61,9 @@
         {
             id: 'SB64-IBJF-001',
             name: 'Ice Blue Game Console',
-            description: 'Comes with a Raspberry Pi5, active and passive cooling, preinstalled SuperBox64OS, joystick, 2 inch trackball with left, middle and right click, directional arcade game pad style buttons, silver spinner, 4 side buttons with 2 on each side, select and 1up start button. Available in 4GB RAM 256GB SSD or 8GB RAM 500GB SSD configurations. Pictured as shown. Finest craftsmanship! SuperBox64 logo and name plate.',
+            description: 'Comes with a Raspberry Pi5, active and passive cooling, preinstalled SuperBox64OS, joystick, 2 inch trackball with left, middle and right click, directional arcade game pad style buttons, silver spinner, 4 side buttons with 2 on each side, select and 1up start button. Pictured as shown. Finest craftsmanship! SuperBox64 logo and name plate.',
             price: 499.99,
+            priceHigh: 599.99,
             image: './images/D93E76D9-BAAC-4947-84A8-17A0FB560A80_1_105_c.jpeg',
             altText: 'SuperBox64 Jack Frost Ice Blue Gaming Console - Premium Raspberry Pi5 Retro Arcade System - Blue LED Gaming Console - Trackball Joystick Spinner Controller - SuperBox64OS - Ultimate Retro Gaming Machine - Custom Arcade Console',
             paypalLink: 'https://www.paypal.com/ncp/payment/EGZCL9AURBV9G'
@@ -129,16 +132,23 @@
 
         // Render Console products (next 4)
         products.slice(4, 8).forEach(product => {
+            const priceDisplay = product.priceHigh
+                ? `<div class="price" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                            <span itemprop="priceCurrency" content="USD">$</span><span itemprop="price" content="${product.price}">${product.price}</span> - 4GB 256GB SSD<br>
+                            $${product.priceHigh} - 8GB 512GB SSD
+                            <meta itemprop="availability" content="https://schema.org/InStock">
+                        </div>`
+                : `<div class="price" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                            <span itemprop="priceCurrency" content="USD">$</span><span itemprop="price" content="${product.price}">${product.price}</span>
+                            <meta itemprop="availability" content="https://schema.org/InStock">
+                        </div>`;
             const productCard = `
                 <div class="product-card" itemscope itemtype="https://schema.org/Product">
                     <img src="${product.image}" alt="${product.altText || product.name}" itemprop="image">
                     <div class="product-content">
                         <h3 itemprop="name">${product.name}</h3>
                         <p itemprop="description">${product.description}</p>
-                        <div class="price" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
-                            <span itemprop="priceCurrency" content="USD">$</span><span itemprop="price" content="${product.price}">${product.price}</span>
-                            <meta itemprop="availability" content="https://schema.org/InStock">
-                        </div>
+                        ${priceDisplay}
                         <a href="${product.paypalLink}" class="buy-button" target="_blank" itemprop="url">Pay with <img src="images/paypal-logo-white.svg" alt="PayPal" height="22" style="vertical-align: middle; margin-left: 5px;"></a>
                     </div>
                 </div>
