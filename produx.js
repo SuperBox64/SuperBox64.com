@@ -71,8 +71,9 @@
         {
             id: 'SB64-CBLT-002',
             name: 'Blue LED Light Game Console',
-            description: '8GB RAM 512GB SSD. Comes with a Raspberry Pi5, active and passive cooling, preinstalled SuperBox64OS, joystick, 2 inch trackball with left, middle and right click, directional arcade game pad style buttons, silver spinner, 4 side buttons with 2 on each side, select and 1up start button. Pictured as shown. Finest craftsmanship! SuperBox64 logo and name plate.',
-            price: 599.99,
+            description: 'Comes with a Raspberry Pi5, active and passive cooling, preinstalled SuperBox64OS, joystick, 2 inch trackball with left, middle and right click, directional arcade game pad style buttons, silver spinner, 4 side buttons with 2 on each side, select and 1up start button. Pictured as shown. Finest craftsmanship! SuperBox64 logo and name plate.',
+            price: 499.99,
+            priceHigh: 599.99,
             image: './images/superbox64_classic.jpeg',
             altText: 'SuperBox64 Classic Blue LED Trackball Gaming Console - Raspberry Pi5 Premium Retro System - Blue LED Trackball Arcade Console - Classic Gaming Hardware - Retro Emulation Station - Custom Game Console - Arcade Quality Gaming System',
             paypalLink: 'https://www.paypal.com/ncp/payment/9S6SLHCS9BUWQ'
