@@ -112,7 +112,7 @@
                         <h3 itemprop="name">${product.name}</h3>
                         <p itemprop="description">${product.description}</p>
                         <div class="price" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
-                            <span itemprop="priceCurrency" content="USD">$</span><span itemprop="price" content="${product.price}">${product.price}</span> USB
+                            <span itemprop="priceCurrency" content="USD">$</span><span itemprop="price" content="${product.price}">${product.price}</span> USB Only
                             <meta itemprop="availability" content="https://schema.org/InStock">
                         </div>
                         <a href="${product.paypalLink}" class="buy-button" target="_blank" itemprop="url">Pay with <img src="images/paypal-logo-white.svg" alt="PayPal" height="22" style="vertical-align: middle; margin-left: 5px;"></a>
