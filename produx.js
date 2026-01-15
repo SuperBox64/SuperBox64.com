@@ -66,7 +66,7 @@
             priceHigh: 599.99,
             image: './images/D93E76D9-BAAC-4947-84A8-17A0FB560A80_1_105_c.jpeg',
             altText: 'SuperBox64 Jack Frost Ice Blue Gaming Console - Premium Raspberry Pi5 Retro Arcade System - Blue LED Gaming Console - Trackball Joystick Spinner Controller - SuperBox64OS - Ultimate Retro Gaming Machine - Custom Arcade Console',
-            paypalLink: 'https://www.paypal.com/ncp/payment/EGZCL9AURBV9G'
+            paypalLink: 'https://www.paypal.com/ncp/payment/RSPJ443HAACTW'
         },
         {
             id: 'SB64-CBLT-002',
