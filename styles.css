@@ -161,7 +161,7 @@ body {
 }
 
 .nav-right-info {
-    display: flex;
+    display: none;
     flex-direction: column;
     align-items: flex-end;
     justify-content: center;

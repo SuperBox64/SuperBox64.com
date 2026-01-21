@@ -248,7 +248,8 @@
         if (!SHOW_PROMO_BANNER) {
             document.getElementById('promo-banner').style.display = 'none';
             // Remove the 95px top offset from navbar when banner is hidden
-            document.head.insertAdjacentHTML('beforeend', '<style>.navbar { top: 0 !important; }</style>');
+            // Also remove the mobile margin-top adjustment since there's no banner to compensate for
+            document.head.insertAdjacentHTML('beforeend', '<style>.navbar { top: 0 !important; margin-top: 0 !important; } @media (max-width: 768px) { .nav-links { top: 100% !important; } }</style>');
         }
     </script>
     <nav class="navbar">
