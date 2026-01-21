@@ -599,12 +599,6 @@ body {
     .price {
         font-size: 1.275rem;
     }
-
-    .about-text li {
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: clip;
-    }
 }
 
 @media (max-width: 900px) {
