@@ -197,6 +197,29 @@ body {
     justify-content: flex-end;
 }
 
+/* Cancer Awareness Ribbon Banner */
+.cancer-ribbon-banner {
+    position: fixed;
+    top: 173px; /* 95px promo banner + 78px navbar */
+    width: 100%;
+    z-index: 999;
+    background: linear-gradient(135deg, #1a0800 0%, #3b1800 50%, #1a0800 100%);
+    border-top: 1px solid rgba(255, 215, 0, 0.2);
+    border-bottom: 2px solid #FFD700;
+    padding: 6px 20px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-size: 0.78rem;
+    color: #FFD700;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.6);
+    line-height: 1.5;
+    letter-spacing: 0.01em;
+}
+
+.cancer-ribbon-banner .ribbon-icon {
+    font-size: 1rem;
+}
+
 .burger-menu {
     display: none;
     cursor: pointer;

@@ -249,7 +249,7 @@
             document.getElementById('promo-banner').style.display = 'none';
             // Remove the 95px top offset from navbar when banner is hidden
             // Also remove the mobile margin-top adjustment since there's no banner to compensate for
-            document.head.insertAdjacentHTML('beforeend', '<style>.navbar { top: 0 !important; margin-top: 0 !important; } @media (max-width: 768px) { .nav-links { top: 100% !important; } }</style>');
+            document.head.insertAdjacentHTML('beforeend', '<style>.navbar { top: 0 !important; margin-top: 0 !important; } .cancer-ribbon-banner { top: 78px !important; } @media (max-width: 768px) { .nav-links { top: 100% !important; } }</style>');
         }
     </script>
     <nav class="navbar">
@@ -283,6 +283,9 @@
             </div>
         </div>
     </nav>
+    <div class="cancer-ribbon-banner" id="cancer-ribbon-banner">
+        <span class="ribbon-icon">&#x1F397;</span> Our founder, Todd Bruss, is currently battling cancer. Through it all, he continues to pour his heart into InkPen. Your support and encouragement mean the world. <span class="ribbon-icon">&#x1F397;</span>
+    </div>
 
     <section id="home" class="hero">
         <div class="hero-content">
