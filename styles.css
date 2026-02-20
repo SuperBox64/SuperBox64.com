@@ -276,6 +276,7 @@ body {
     z-index: 2;
     max-width: 800px;
     padding: 0 20px;
+    margin-top: 50px;
 }
 
 .hero h1 {
