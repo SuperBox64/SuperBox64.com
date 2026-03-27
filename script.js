@@ -194,42 +194,50 @@ function init() {
 
     // Contact Form Handling
     const contactForm = document.getElementById('contactForm');
+    // Cloudflare Worker endpoint for sending email (update after deploying worker)
+    const WORKER_URL = 'https://superbox64-contact.superbox64.workers.dev';
 
     if (contactForm) {
-        contactForm.addEventListener('submit', function(e) {
+        contactForm.addEventListener('submit', async function(e) {
             e.preventDefault();
 
-            // Get form data
-            const name = document.getElementById('name').value;
-            const message = document.getElementById('message').value;
+            const name = document.getElementById('name').value.trim();
+            const email = document.getElementById('email').value.trim();
+            const message = document.getElementById('message').value.trim();
 
-            // Validate form data
-            if (!name || !message) {
+            if (!name || !email || !message) {
                 showMessage('Please fill in all fields.', 'error');
                 return;
             }
 
-            // Decode base64 email addresses
-            const toEmail = atob('dG9kZEBzdXBlcmJveDY0LmNvbQ==');
-            const ccEmail1 = atob('dG9kZEBpbmtwZW4uaW8=');
-            const ccEmail2 = atob('c3RhcnBsYXlyQGljbG91ZC5jb20=');
+            const submitBtn = contactForm.querySelector('.submit-button');
+            submitBtn.disabled = true;
+            submitBtn.textContent = 'Sending...';
 
-            // Create mailto link with form data
-            const subject = encodeURIComponent('SuperBox64 product inquiry from ' + name);
-            const body = encodeURIComponent(message + '\n\nSincerely,\n\n' + name);
+            try {
+                const response = await fetch(WORKER_URL, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ name, email, message }),
+                });
 
-            const mailtoLink = 'mailto:' + toEmail + '?cc=' + ccEmail1 + ',' + ccEmail2 + '&subject=' + subject + '&body=' + body;
-
-            // Open email client
-            window.location.href = mailtoLink;
-
-            // Show success message
-            showMessage('Opening your email client...', 'success');
-
-            // Reset form after a short delay
-            setTimeout(function() {
-                contactForm.reset();
-            }, 1000);
+                if (response.ok) {
+                    showMessage('Message sent! We\'ll get back to you at ' + email, 'success');
+                    contactForm.reset();
+                } else {
+                    throw new Error('Server error');
+                }
+            } catch (err) {
+                // Fallback: open email client if Worker is unavailable
+                const subject = encodeURIComponent('SuperBox64 inquiry from ' + name);
+                const body = encodeURIComponent(message + '\n\nFrom: ' + name + '\nEmail: ' + email);
+                const mailtoLink = 'mailto:starplayr@icloud.com?subject=' + subject + '&body=' + body;
+                window.location.href = mailtoLink;
+                showMessage('Opening your email app as a backup...', 'success');
+            } finally {
+                submitBtn.disabled = false;
+                submitBtn.textContent = 'Send Message';
+            }
         });
     }
 

@@ -452,6 +452,25 @@ body {
     box-shadow: 0 5px 15px rgba(0,123,255,0.4);
 }
 
+/* Product trust & includes info */
+.product-trust-info {
+    text-align: center;
+    font-size: 0.75rem;
+    color: #28a745;
+    margin-top: 0.5rem;
+    letter-spacing: 0.02em;
+}
+
+.product-includes {
+    text-align: center;
+    font-size: 0.8rem;
+    color: var(--text-gray);
+    margin-top: 0.5rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid rgba(255,255,255,0.08);
+    line-height: 1.4;
+}
+
 /* Mobile/Desktop visibility */
 .mobile-only {
     display: none;
@@ -826,6 +845,79 @@ body {
 .submit-button:hover {
     transform: translateY(-2px);
     box-shadow: 0 5px 15px rgba(0,123,255,0.4);
+}
+
+/* Trust / Shop with Confidence Section */
+.trust-section {
+    padding: 3rem 2rem;
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+}
+
+.trust-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.trust-section h2 {
+    text-align: center;
+    margin-bottom: 2.5rem;
+    font-family: 'CCUpUpAndAway', 'Press Start 2P', cursive;
+    font-size: 2.4rem;
+    color: var(--text-white);
+    text-shadow: 0 0 10px rgba(0,123,255,0.3);
+}
+
+.trust-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+}
+
+.trust-item {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    padding: 1.5rem;
+    text-align: center;
+}
+
+.trust-icon {
+    font-size: 2.5rem;
+    margin-bottom: 0.75rem;
+}
+
+.trust-item h3 {
+    font-size: 1rem;
+    color: var(--text-white);
+    margin-bottom: 0.75rem;
+    font-family: Arial, sans-serif;
+}
+
+.trust-item p {
+    font-size: 0.9rem;
+    color: var(--text-gray);
+    line-height: 1.5;
+}
+
+.trust-item a {
+    color: var(--primary-blue);
+    text-decoration: none;
+}
+
+.trust-item a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 900px) {
+    .trust-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .trust-grid {
+        grid-template-columns: 1fr;
+    }
 }
 
 /* Footer */

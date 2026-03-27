@@ -24,7 +24,10 @@
       "WebFetch(domain:inkpen.io)",
       "mcp__xcf-server__list_projects",
       "Bash(git -C /Users/toddbruss/Documents/GitHub/SuperBox64.com add styles.css)",
-      "Bash(git -C:*)"
+      "Bash(git -C:*)",
+      "Bash(git push:*)",
+      "WebFetch(domain:developers.cloudflare.com)",
+      "WebFetch(domain:blog.cloudflare.com)"
     ],
     "deny": [],
     "ask": []

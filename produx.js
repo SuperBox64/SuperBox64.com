@@ -116,6 +116,12 @@
                             <meta itemprop="availability" content="https://schema.org/InStock">
                         </div>
                         <a href="${product.paypalLink}" class="buy-button" target="_blank" itemprop="url">Pay with <img src="images/paypal-logo-white.svg" alt="PayPal" height="22" style="vertical-align: middle; margin-left: 5px;"></a>
+                        <div class="product-trust-info">
+                            <span>&#x1F512; Secure PayPal Checkout &bull; Buyer Protection</span>
+                        </div>
+                        <div class="product-includes">
+                            <strong>Includes:</strong> Controller, 8ft detachable USB cable, rubber feet
+                        </div>
                     </div>
                 </div>
             `;
@@ -151,6 +157,12 @@
                         <p itemprop="description">${product.description}</p>
                         ${priceDisplay}
                         <a href="${product.paypalLink}" class="buy-button" target="_blank" itemprop="url">Pay with <img src="images/paypal-logo-white.svg" alt="PayPal" height="22" style="vertical-align: middle; margin-left: 5px;"></a>
+                        <div class="product-trust-info">
+                            <span>&#x1F512; Secure PayPal Checkout &bull; Buyer Protection</span>
+                        </div>
+                        <div class="product-includes">
+                            <strong>Includes:</strong> Console with Pi5, controller, power supply, 8ft USB cable, SuperBox64OS preinstalled
+                        </div>
                     </div>
                 </div>
             `;
