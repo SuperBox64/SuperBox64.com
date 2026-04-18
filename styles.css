@@ -1161,6 +1161,7 @@ body {
     top: 78px; /* below fixed navbar (78px) */
     left: 0;
     z-index: 999;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.8);
 }
 .countdown-banner-content {
     max-width: 1200px;
